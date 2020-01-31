@@ -139,6 +139,7 @@ class FlutterWebViewClient {
         return FlutterWebViewClient.this.shouldOverrideUrlLoading(view, request);
       }
 
+      @SuppressWarnings("deprecation")
       @Override
       public boolean shouldOverrideUrlLoading(WebView view, String url) {
         return FlutterWebViewClient.this.shouldOverrideUrlLoading(view, url);

@@ -30,6 +30,7 @@ class ConnectivityBroadcastReceiver extends BroadcastReceiver
     this.connectivity = connectivity;
   }
 
+  @SuppressWarnings("deprecation")
   @Override
   public void onListen(Object arguments, EventChannel.EventSink events) {
     this.events = events;

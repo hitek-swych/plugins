@@ -38,6 +38,7 @@ public class WebViewActivity extends Activity {
   private final WebViewClient webViewClient =
       new WebViewClient() {
 
+        @SuppressWarnings("deprecation")
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
           if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
