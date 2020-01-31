@@ -24,7 +24,7 @@ public class DeviceInfoPlugin implements FlutterPlugin {
   @Override
   public void onAttachedToEngine(FlutterPlugin.FlutterPluginBinding binding) {
     setupMethodChannel(
-        binding.getFlutterEngine().getDartExecutor(),
+        binding.getBinaryMessenger(),
         binding.getApplicationContext().getContentResolver());
   }
 
